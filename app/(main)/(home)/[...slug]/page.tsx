@@ -11,7 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import { Ad1, Ad2, Ad3, Ad4, Ad5 } from "@/components/ads/ads";
+import { Ad1, Ad2, Ad3 } from "@/components/ads/ads";
 
 import NoBlog from "@/components/etc/NoBlog";
 import BlogList from "@/components/blogs/BlogList";
@@ -156,7 +156,7 @@ const slugPage = async ({ params }: { params: { slug: string[] } }) => {
 
   return (
     <>
-      <Ad4 />
+      <Ad1 />
       <div className="w-full padding md:py-4 bg-[#a03131] border-b border-gray-300/30 flex flex-wrap items-center justify-start">
         <div className="flex global-container flex-col">
           <div className="flex flex-wrap items-center justify-start">
@@ -177,7 +177,7 @@ const slugPage = async ({ params }: { params: { slug: string[] } }) => {
           </h1>
         </div>
       </div>
-      <Ad5 />
+      <Ad2 />
       <div className="bg-white global-container w-full h-full">
         <script
           type="application/ld+json"
