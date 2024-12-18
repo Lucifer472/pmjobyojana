@@ -33,20 +33,21 @@ const Terms = () => {
       </span>
       <div className="max-w-[750px] mx-auto flex flex-col items-start gap-y-4 w-full">
         <p className="w-full text-left">
-          OJASINFO is a metadata-search engine, which mean that different search
-          machines of OJASINFO search in more search engines on the internet.
-          The results that are displayed by OJASINFO as result of a search
-          command of a user, originate from other search engines. OJASINFO shows
-          the source of each result in its result list. It is possible that
-          OJASINFO shows in the search results direct links to files or web
-          pages that contain material that is protected by copyright or other
-          intellectual property rights. However this material can be found and
-          accessed by using the Website, OJASINFO does not and cannot grant its
-          users the permission to download, copy or use this material. The user
-          alone is responsible and liable of the use, copy and / or download of
-          this material. OJASINFO is never responsible or liable for sanctions
-          based on law or regulations of law suits of any kind against the user
-          as result of using search services provided by OJASINFO.
+          PMJOBYOJANA is a metadata-search engine, which mean that different
+          search machines of PMJOBYOJANA search in more search engines on the
+          internet. The results that are displayed by PMJOBYOJANA as result of a
+          search command of a user, originate from other search engines.
+          PMJOBYOJANA shows the source of each result in its result list. It is
+          possible that PMJOBYOJANA shows in the search results direct links to
+          files or web pages that contain material that is protected by
+          copyright or other intellectual property rights. However this material
+          can be found and accessed by using the Website, PMJOBYOJANA does not
+          and cannot grant its users the permission to download, copy or use
+          this material. The user alone is responsible and liable of the use,
+          copy and / or download of this material. PMJOBYOJANA is never
+          responsible or liable for sanctions based on law or regulations of law
+          suits of any kind against the user as result of using search services
+          provided by PMJOBYOJANA.
         </p>
         <h2 className={cn("text-xl font-[600]", poppins.className)}>
           Functioning of the Website
@@ -176,13 +177,13 @@ const Terms = () => {
           Affiliate disclaimer
         </h2>
         <p className="w-full text-left">
-          OJASINFO offers a shopping experience as easy as possible. We have
+          PMJOBYOJANA offers a shopping experience as easy as possible. We have
           relationships with various companies, organizations and entities whose
-          products or services may be listed on OJASINFO. If any of those
+          products or services may be listed on PMJOBYOJANA. If any of those
           products or services are purchased through the links on this website,
-          then OJASINFO may be compensated. It may happen that shops compensate
-          us to help promote their products or services so that they are easier
-          to find.
+          then PMJOBYOJANA may be compensated. It may happen that shops
+          compensate us to help promote their products or services so that they
+          are easier to find.
         </p>
       </div>
     </section>
