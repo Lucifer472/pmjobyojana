@@ -10,6 +10,8 @@ import { CardImage, description, keywords, title, url } from "@/constant";
 import "@/app/globals.css";
 import Footer from "@/components/footer/Footer";
 
+export const revalidate = 0;
+
 // Fonts
 const poppins = Roboto_Slab({
   subsets: ["latin"],
