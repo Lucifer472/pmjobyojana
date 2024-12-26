@@ -48,7 +48,7 @@ export default async function Home() {
   const gov = await getBlogs({
     take: 4,
     where: {
-      category: "/government-yojana",
+      category: category[0].link,
     },
     orderBy: {
       createdAt: "desc",

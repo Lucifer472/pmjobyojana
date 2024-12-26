@@ -29,8 +29,6 @@ const BlogListing = ({
   const FirstBlog = blogData[0];
   const mainBlogData = blogData.splice(1, 3);
 
-  if (FirstBlog === undefined) return <NoBlog />;
-  if (mainBlogData === undefined) return <NoBlog />;
   return (
     <section className="w-full h-full bg-white">
       <div className="global-container w-full flex flex-col">
