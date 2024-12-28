@@ -9,7 +9,6 @@ import { CardImage, description, keywords, title, url } from "@/constant";
 
 import "@/app/globals.css";
 import Footer from "@/components/footer/Footer";
-import { InterstellarAds } from "@/components/ads/ads";
 
 export const revalidate = 0;
 
@@ -64,9 +63,39 @@ export default function RootLayout({
           async
           strategy="afterInteractive"
         ></Script>
+        <Script strategy="afterInteractive" id="inter-ads" async>
+          {`window.googletag = window.googletag || { cmd: [] };
+
+          googletag.cmd.push(() => {
+            // Define a web interstitial ad slot.
+            const interstitialSlot = (interstitialSlot = googletag.defineOutOfPageSlot(
+              "/22971894985/PM_S_INTERSTITIAL",
+              googletag.enums.OutOfPageFormat.INTERSTITIAL
+            ));
+
+            // Slot returns null if the page or device does not support interstitials.
+            if (interstitialSlot) {
+              // Enable optional interstitial triggers and register the slot.
+              interstitialSlot.addService(googletag.pubads()).setConfig({
+                interstitial: {
+                  triggers: {
+                    navBar: true,
+                    unhideWindow: true,
+                  },
+                },
+              });
+
+              googletag.enableServices();
+
+              googletag.display(interstitialSlot);
+            }
+          });
+
+          `}
+        </Script>
         <Toaster position="top-center" />
         <LoadingWrapper />
-        <InterstellarAds />
+
         {children}
         <Footer />
       </body>
