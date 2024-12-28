@@ -86,11 +86,18 @@ export default function RootLayout({
               });
 
               googletag.enableServices();
-
-              googletag.display(interstitialSlot);
             }
           });
-
+          `}
+        </Script>
+        <Script strategy="afterInteractive" id="inter-ads" async>
+          {`
+            googletag.cmd.push(() => {
+              // Ensure the first call to display comes after static ad slot
+              // divs are defined. If you do not have any static ad slots, this
+              // call can be made immediately after services are enabled.
+              googletag.display(interstitialSlot);
+            });
           `}
         </Script>
         <Toaster position="top-center" />
