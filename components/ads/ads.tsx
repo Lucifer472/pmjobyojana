@@ -1,50 +1,34 @@
 "use client";
 import { AdsWrapper } from "@/components/wrappers/ad-wrapper";
 import { useEffect } from "react";
+import { DefineAdSlot } from "./google-publisher-tag";
+
+const slotIds = [
+  "/22971894985/PM_S1_336X280",
+  "/22971894985/PM_S2_336X280",
+  "/22971894985/PM_S3_336X280",
+  "/22971894985/PM_S4_336X280",
+  "/22971894985/PM_S5_336X280",
+];
 
 export const Ad1 = () => {
-  return (
-    <AdsWrapper
-      id="div-gpt-ad-1735361119354-0"
-      slot="/22971894985/PM_S1_336X280"
-    />
-  );
+  return <DefineAdSlot adUnit={slotIds[0]} size={[336, 280]} />;
 };
 
 export const Ad2 = () => {
-  return (
-    <AdsWrapper
-      id="div-gpt-ad-1735361341825-0"
-      slot="/22971894985/PM_S2_336X280"
-    />
-  );
+  return <DefineAdSlot adUnit={slotIds[1]} size={[336, 280]} />;
 };
 
 export const Ad3 = () => {
-  return (
-    <AdsWrapper
-      id="div-gpt-ad-1735361424736-0"
-      slot="/22971894985/PM_S3_336X280"
-    />
-  );
+  return <DefineAdSlot adUnit={slotIds[2]} size={[336, 280]} />;
 };
 
 export const Ad4 = () => {
-  return (
-    <AdsWrapper
-      id="div-gpt-ad-1735361519382-0"
-      slot="/22971894985/PM_S4_336X280"
-    />
-  );
+  return <DefineAdSlot adUnit={slotIds[3]} size={[336, 280]} />;
 };
 
 export const Ad5 = () => {
-  return (
-    <AdsWrapper
-      id="div-gpt-ad-1735363826535-0"
-      slot="/22971894985/PM_S5_336X280"
-    />
-  );
+  return <DefineAdSlot adUnit={slotIds[4]} size={[336, 280]} />;
 };
 
 export const InterstellarAds = () => {
