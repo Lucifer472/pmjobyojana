@@ -35,7 +35,7 @@ const page = () => {
             Welcome to our Scholarship Update!
           </p>
           <p className="leading-[2em] text-lg">
-            This is the about us page of exmple.com.
+            This is the about us page of {url}.
           </p>
           <p className="leading-[2em] text-lg">
             We are a team of education enthusiasts dedicated to helping students
