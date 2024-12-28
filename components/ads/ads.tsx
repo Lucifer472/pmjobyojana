@@ -3,23 +3,48 @@ import { AdsWrapper } from "@/components/wrappers/ad-wrapper";
 import { useEffect } from "react";
 
 export const Ad1 = () => {
-  return <AdsWrapper id="div-gpt-ad-1735361119354-0" />;
+  return (
+    <AdsWrapper
+      id="div-gpt-ad-1735361119354-0"
+      slot="/22971894985/PM_S1_336X280"
+    />
+  );
 };
 
 export const Ad2 = () => {
-  return <AdsWrapper id="div-gpt-ad-1735361341825-0" />;
+  return (
+    <AdsWrapper
+      id="div-gpt-ad-1735361341825-0"
+      slot="/22971894985/PM_S2_336X280"
+    />
+  );
 };
 
 export const Ad3 = () => {
-  return <AdsWrapper id="div-gpt-ad-1735361424736-0" />;
+  return (
+    <AdsWrapper
+      id="div-gpt-ad-1735361424736-0"
+      slot="/22971894985/PM_S3_336X280"
+    />
+  );
 };
 
 export const Ad4 = () => {
-  return <AdsWrapper id="div-gpt-ad-1735361519382-0" />;
+  return (
+    <AdsWrapper
+      id="div-gpt-ad-1735361519382-0"
+      slot="/22971894985/PM_S4_336X280"
+    />
+  );
 };
 
 export const Ad5 = () => {
-  return <AdsWrapper id="div-gpt-ad-1735363826535-0" />;
+  return (
+    <AdsWrapper
+      id="div-gpt-ad-1735363826535-0"
+      slot="/22971894985/PM_S5_336X280"
+    />
+  );
 };
 
 export const InterstellarAds = () => {
@@ -76,6 +101,8 @@ googletag.cmd.push(() => {
   // call can be made immediately after services are enabled.
   googletag.display(interstitialSlot!);
 });`;
+
+    document.body.append(scriptTag);
   }, []);
 
   return <div className="hidden">Interstaller Ad</div>;
