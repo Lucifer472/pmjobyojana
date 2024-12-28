@@ -1,7 +1,10 @@
 "use client";
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 export const AdsWrapper = ({ id, slot }: { id: string; slot: string }) => {
+  const pathname = usePathname();
+
   useEffect(() => {
     if (typeof window !== "undefined" && window.googletag) {
       window.googletag = window.googletag || { cmd: [] };
@@ -25,7 +28,7 @@ export const AdsWrapper = ({ id, slot }: { id: string; slot: string }) => {
         });
       };
     }
-  }, [id, slot]);
+  }, [id, slot, pathname]);
 
   return (
     <div className="w-full space-y-2">
