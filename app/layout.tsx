@@ -9,6 +9,7 @@ import { CardImage, description, keywords, title, url } from "@/constant";
 
 import "@/app/globals.css";
 import Footer from "@/components/footer/Footer";
+import { InterstellarAds } from "@/components/ads/ads";
 
 export const revalidate = 0;
 
@@ -59,13 +60,13 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${poppins.className} overflow-x-hidden`}>
         <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8113530297751450"
+          src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
           async
           strategy="afterInteractive"
-          crossOrigin="anonymous"
         ></Script>
         <Toaster position="top-center" />
         <LoadingWrapper />
+        <InterstellarAds />
         {children}
         <Footer />
       </body>
