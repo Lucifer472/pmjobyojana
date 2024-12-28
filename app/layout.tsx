@@ -65,10 +65,10 @@ export default function RootLayout({
         ></Script>
         <Script strategy="afterInteractive" id="inter-ads" async>
           {`window.googletag = window.googletag || { cmd: [] };
-
+          let interstitialSlot;
           googletag.cmd.push(() => {
             // Define a web interstitial ad slot.
-            const interstitialSlot = (interstitialSlot = googletag.defineOutOfPageSlot(
+            interstitialSlot = (interstitialSlot = googletag.defineOutOfPageSlot(
               "/22971894985/PM_S_INTERSTITIAL",
               googletag.enums.OutOfPageFormat.INTERSTITIAL
             ));
@@ -90,7 +90,7 @@ export default function RootLayout({
           });
           `}
         </Script>
-        <Script strategy="afterInteractive" id="inter-ads" async>
+        <Script strategy="afterInteractive" id="inter-ads-push" async>
           {`
             googletag.cmd.push(() => {
               // Ensure the first call to display comes after static ad slot
