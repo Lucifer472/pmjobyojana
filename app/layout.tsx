@@ -63,6 +63,11 @@ export default function RootLayout({
           async
           strategy="afterInteractive"
         ></Script>
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8113530297751450"
+          async
+          strategy="afterInteractive"
+        ></Script>
         <Script strategy="afterInteractive" id="inter-ads" async>
           {`window.googletag = window.googletag || { cmd: [] };
           let interstitialSlot;
@@ -93,9 +98,6 @@ export default function RootLayout({
         <Script strategy="afterInteractive" id="inter-ads-push" async>
           {`
             googletag.cmd.push(() => {
-              // Ensure the first call to display comes after static ad slot
-              // divs are defined. If you do not have any static ad slots, this
-              // call can be made immediately after services are enabled.
               googletag.display(interstitialSlot);
             });
           `}
