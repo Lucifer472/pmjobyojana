@@ -64,10 +64,17 @@ export default function RootLayout({
           strategy="afterInteractive"
         ></Script>
         <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8113530297751450"
+          src="https://www.googletagmanager.com/gtag/js?id=G-8FYMCYZZN2"
           async
           strategy="afterInteractive"
         ></Script>
+        <Script id="google-analatics">
+          {` window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-8FYMCYZZN2');`}
+        </Script>
         <Script strategy="afterInteractive" id="inter-ads" async>
           {`window.googletag = window.googletag || { cmd: [] };
           let interstitialSlot;
