@@ -11,15 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import {
-  Ad1,
-  Ad2,
-  Ad3,
-  Ad4,
-  Ad5,
-  OutBrain2,
-  OutBrain3,
-} from "@/components/ads/ads";
+import { Ad1, Ad2, Ad3, Ad4, Ad5, OutBrain2 } from "@/components/ads/ads";
 
 import NoBlog from "@/components/etc/NoBlog";
 import BlogList from "@/components/blogs/BlogList";
@@ -165,7 +157,7 @@ const slugPage = async ({ params }: { params: { slug: string[] } }) => {
   return (
     <>
       <Ad4 />
-      <div className="w-full padding md:py-4 bg-[#a03131] border-b border-gray-300/30 flex flex-wrap items-center justify-start">
+      <div className="w-full padding md:py-4 bg-main border-b border-gray-300/30 flex flex-wrap items-center justify-start">
         <div className="flex global-container flex-col">
           <div className="flex flex-wrap items-center justify-start">
             <Link href={"/"} className="text-[8px] underline text-gray-100">
@@ -223,7 +215,6 @@ const slugPage = async ({ params }: { params: { slug: string[] } }) => {
             ))}
           </Accordion>
         )}
-        <OutBrain3 />
         <RecentBlog
           options={{
             take: 3,
