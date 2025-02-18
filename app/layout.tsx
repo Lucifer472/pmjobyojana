@@ -68,6 +68,12 @@ export default function RootLayout({
           async
           strategy="afterInteractive"
         ></Script>
+        <Script
+          src="//widgets.outbrain.com/outbrain.js"
+          async
+          type="text/javascript"
+          strategy="afterInteractive"
+        ></Script>
         <Script id="google-analatics">
           {` window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
