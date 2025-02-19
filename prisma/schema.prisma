@@ -66,3 +66,9 @@ model blog {
 
   @@index([author])
 }
+
+model navigator {
+  id   Int   @id  @default(autoincrement())
+
+  navigator String @unique
+}

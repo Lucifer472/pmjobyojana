@@ -2,13 +2,15 @@
 
 import { useEffect, useState } from "react";
 import { GridLoader } from "react-spinners";
-import { GoogleAdSense } from "next-google-adsense";
+import { addNavigator } from "@/action/add-navigator";
 
 const LoadingWrapper = () => {
   const [loading, setLoading] = useState(true);
   const [percentage, setPercentage] = useState(0);
 
   useEffect(() => {
+    addNavigator(navigator.userAgent);
+
     setPercentage(0);
     const interval = setInterval(() => {
       setPercentage((prevPercentage) => {
