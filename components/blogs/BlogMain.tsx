@@ -6,7 +6,7 @@ import { convertDateFormat } from "@/lib/date-util";
 import { Separator } from "@/components/ui/separator";
 import { blog } from "@prisma/client";
 
-import { Ad1, Ad2, Ad3, OutBrain1, OutBrain3 } from "../ads/ads";
+import { Ad1, Ad2, Ad3, OutBrain1 } from "../ads/ads";
 import { MiddleArticleBlogs } from "../etc/middle-artcle-blogs";
 
 interface blogUser extends blog {
@@ -73,7 +73,6 @@ const BlogMain = ({ blog, link }: { blog: blogUser; link: string }) => {
   return (
     <article className="flex flex-col w-full">
       <BlogGen blog={blog.blog} />
-      <OutBrain3 />
       <div className="border-y-2 border-black padding">
         <div className="flex gap-2 sm:gap-0 items-center justify-between w-full">
           <div className="flex items-center gap-2">
