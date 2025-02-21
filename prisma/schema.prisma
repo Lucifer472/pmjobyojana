@@ -70,5 +70,5 @@ model blog {
 model navigator {
   id   Int   @id  @default(autoincrement())
 
-  navigator String @unique
+  navigator String 
 }
